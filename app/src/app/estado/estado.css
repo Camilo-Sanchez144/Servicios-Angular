@@ -1,0 +1,19 @@
+.estado-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  font-family: sans-serif;
+}
+
+.estado-container button {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.estado-container button:hover {
+  background-color: #d62839;
+}

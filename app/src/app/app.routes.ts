@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { Login } from './login/login';
 import { Apirest } from './apirest/apirest';
+import { Estado } from './estado/estado';
 
 export const routes: Routes = [
 
@@ -14,4 +15,6 @@ export const routes: Routes = [
     component: Apirest
   }
 
+
+  { path: 'estado', component: Estado }
 ];

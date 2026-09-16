@@ -1,0 +1,11 @@
+<div class="estado-container">
+  <h3>Estado actual del carrito</h3>
+
+  <p *ngIf="items.length === 0">No hay items en el carrito.</p>
+
+  <ul *ngIf="items.length > 0">
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ul>
+
+  <button (click)="vaciar()">Vaciar carrito</button>
+</div>
