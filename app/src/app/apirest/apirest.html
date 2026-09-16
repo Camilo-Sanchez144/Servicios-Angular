@@ -1,1 +1,35 @@
-<p>apirest works!</p>
+<div class="characters-container">
+
+  <h1>Dragon Ball Characters</h1>
+
+  <div class="characters-grid">
+
+@for (character of character; track character.id) {
+
+  <div class="character-card">
+
+    <img
+      [src]="character.image"
+      [alt]="character.name"
+      class="character-image"
+    />
+
+    <div class="character-info">
+
+      <h2>{{ character.name }}</h2>
+
+      <p><strong>Raza:</strong> {{ character.race }}</p>
+
+      <p><strong>Ki:</strong> {{ character.ki }}</p>
+
+      <p><strong>Ki máximo:</strong> {{ character.maxKi }}</p>
+
+    </div>
+
+  </div>
+
+}
+
+  </div>
+
+</div>

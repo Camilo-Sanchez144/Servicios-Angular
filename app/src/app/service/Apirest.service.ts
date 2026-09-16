@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn:'root'
 })
-export class Apirest {
+export class ApirestService {
   private apiUrl = 'https://dragonball-api.com/api/characters'
 
   constructor(private http: HttpClient){}
