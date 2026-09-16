@@ -1,10 +1,14 @@
 <div class="container" style="padding: 20px; font-family: sans-serif;">
   <h1>Servicios y formularios reactivos</h1>
   
-  <nav style="margin-bottom: 20px; display: flex; gap: 10px;">
-    <button routerLink="/estado" style="padding: 10px 15px; cursor: pointer;">Estado</button>
+  <nav style="margin-bottom: 20px; display: flex; gap: 10px; align-items: center;">
     <button routerLink="/apirest" style="padding: 10px 15px; cursor: pointer;">API REST</button>
-    <button routerLink="/futuro" style="padding: 10px 15px; cursor: pointer;">Componente Futuro</button>
+    <button routerLink="/estado" style="padding: 10px 15px; cursor: pointer;">Estado</button>
+    <button routerLink="/login" style="padding: 10px 15px; cursor: pointer;">Login</button>
+    <button routerLink="/formulario" style="padding: 10px 15px; cursor: pointer;">Formulario Reactivo</button>
+    <span style="margin-left: auto; font-weight: bold; background: #ff9800; color: white; padding: 5px 15px;">
+       {{ cantidadCarrito }} en el carrito
+    </span>
   </nav>
 
   <hr style="margin-bottom: 20px;">

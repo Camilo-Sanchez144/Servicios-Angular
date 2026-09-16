@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Auth } from '../service/Auth.service';
+import { Auth } from '../service/auth.service';
 import { RouterLink } from '@angular/router';
 
 @Component({

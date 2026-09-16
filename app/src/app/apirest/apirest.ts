@@ -1,5 +1,6 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
-import { ApirestService } from '../service/Apirest.service';
+import { ApirestService } from '../service/apirest.service';
+import { CarritoService } from '../service/carrito.service';
 
 @Component({
   selector: 'app-apirest',
@@ -13,6 +14,7 @@ export class Apirest implements OnInit {
 
   constructor(
     private apiRestService: ApirestService,
+    private carritoService: CarritoService,
     private cdr: ChangeDetectorRef
   ) {}
 
@@ -31,5 +33,9 @@ export class Apirest implements OnInit {
         console.error('Error:', error);
       }
     });
+  }
+
+  agregarAlCarrito(nombre: string) {
+    this.carritoService.agregarItem(nombre);
   }
 }

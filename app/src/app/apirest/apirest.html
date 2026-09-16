@@ -1,6 +1,6 @@
 <div class="characters-container">
 
-  <h1>Dragon Ball Characters</h1>
+  <h1>Personajes de Dragon Ball</h1>
 
   <div class="characters-grid">
 
@@ -23,6 +23,10 @@
       <p><strong>Ki:</strong> {{ character.ki }}</p>
 
       <p><strong>Ki máximo:</strong> {{ character.maxKi }}</p>
+
+      <button class="cart-button" (click)="agregarAlCarrito(character.name)">
+        Agregar al carrito
+      </button>
 
     </div>
 

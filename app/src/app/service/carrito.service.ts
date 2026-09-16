@@ -5,8 +5,6 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class CarritoService {
-  // Guarda la lista actual de items y permite que cualquier
-  // componente se "suscriba" para enterarse cuando cambia.
   private itemsSubject = new BehaviorSubject<string[]>([]);
   items$ = this.itemsSubject.asObservable();
 

@@ -16,16 +16,12 @@ export class Estado implements OnInit, OnDestroy {
   constructor(private carritoService: CarritoService) {}
 
   ngOnInit(): void {
-    // Nos suscribimos al observable del servicio: cada vez que
-    // cambie el carrito, "items" se actualiza automáticamente.
     this.sub = this.carritoService.items$.subscribe(items => {
       this.items = items;
     });
   }
 
   ngOnDestroy(): void {
-    // Nos desuscribimos al destruir el componente para no dejar
-    // la suscripción "viva" en memoria.
     this.sub.unsubscribe();
   }
 
